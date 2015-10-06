@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using Topshelf;
 
-namespace EventStoreWinServiceWrapper
+namespace GesRunner
 {
     class Program
     {
@@ -27,11 +27,10 @@ namespace EventStoreWinServiceWrapper
                     s.WhenStopped(tc => tc.Stop());
                 });
 
-                x.SetDescription("EventStoreServiceWrapper");
-                x.SetDisplayName("EventStoreServiceWrapper");
-                x.SetServiceName("EventStoreServiceWrapper");
+                x.SetDescription(configuration.Description);
+                x.SetDisplayName(configuration.ServiceName);
+                x.SetServiceName(configuration.ServiceName);
             });
         }
-
     }
 }

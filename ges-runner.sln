@@ -1,9 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventStoreWinServiceWrapper", "EventstoreWinServiceWrapper\EventStoreWinServiceWrapper.csproj", "{E5A74B3A-783F-4964-83CE-9D2CF4A5BF92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ges-runner", "src\ges-runner.csproj", "{E5A74B3A-783F-4964-83CE-9D2CF4A5BF92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{63A19D07-321B-416C-8BC8-BA42FF549D5A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
