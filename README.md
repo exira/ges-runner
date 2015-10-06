@@ -16,7 +16,11 @@ To install do the following:
 
   * Enjoy Event Store
 
- ## License
+## Cloning
+
+```git clone git@github.com:exira/ges-runner.git -c core.autocrlf=input```
+
+## License
 
 ges-runner is licensed under [MIT](http://choosealicense.com/licenses/mit/ "Read more about the MIT License"). Refer to [LICENSE](https://github.com/exira/ges-runner/blob/master/LICENSE) for more information
 
