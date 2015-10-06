@@ -1,6 +1,6 @@
 # ges-runner
 
-Service wrapper that uses [Topshelf](http://topshelf-project.com/) to run EventStore (https://geteventstore.com/)
+Wrapper that uses [Topshelf](http://topshelf-project.com/) to run EventStore (https://geteventstore.com/) as a Windows Service.
 
 ## Usage
 
