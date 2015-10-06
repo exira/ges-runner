@@ -10,7 +10,6 @@ function Get-ScriptDirectory {
 
 $scriptDirectory = Get-ScriptDirectory
 $exePath = "$scriptDirectory\ges-runner.exe"
-write-Host $servicename
 
 $service = get-service | Where {$_.Name -eq $servicename}
 if($service -ne $null) {
