@@ -22,8 +22,9 @@ summary
 description
     Exira.EventStore.Runner is a wrapper that uses Topshelf to run EventStore as a Windows Service
 files
-    ges.esconfig ==>
-    ges-runner.exe ==>
-    ges-runner.exe.config ==>
-    Install.ps1 ==>
-    Topshelf.dll =>
+    bin/Release/ges.esconfig ==> tools
+    bin/Release/ges-runner.exe ==> tools
+    bin/Release/ges-runner.pdb ==> tools
+    bin/Release/ges-runner.exe.config ==> tools
+    bin/Release/Install.ps1 ==> tools
+    bin/Release/Topshelf.dll ==> tools
