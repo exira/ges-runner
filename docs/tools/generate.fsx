@@ -9,7 +9,7 @@
 // for binaries output to root bin folder please add the filename only to the
 // referenceBinaries list below in order to generate documentation for the binaries.
 // (This is the original behaviour of ProjectScaffold prior to multi project support)
-let referenceBinaries = []
+let referenceBinaries = [ "ges-runner\\ges-runner.exe" ]
 // Web site location for the generated documentation
 let website = "/ges-runner"
 

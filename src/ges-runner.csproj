@@ -31,7 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Exira.EventStore.Runner.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\ges-runner.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>exira.ico</ApplicationIcon>
