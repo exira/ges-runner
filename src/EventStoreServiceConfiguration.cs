@@ -1,6 +1,6 @@
 using System.Configuration;
 
-namespace GesRunner
+namespace Exira.EventStore.Runner
 {
     public class EventStoreServiceConfiguration : ConfigurationSection
     {

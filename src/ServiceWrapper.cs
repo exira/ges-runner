@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 
-namespace GesRunner
+namespace Exira.EventStore.Runner
 {
     public class ServiceWrapper
     {

@@ -1,0 +1,23 @@
+type project
+id
+    Exira.EventStore.Runner
+owners
+    exira
+authors
+    exira
+projectUrl
+    http://git.exira.com/ges-runner/
+iconUrl
+    https://raw.githubusercontent.com/exira/ges-runner/master/docs/files/img/logo.png
+licenseUrl
+    http://github.com/exira/ges-runner/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    eventstore ges topshelf f#
+summary
+    Exira.EventStore.Runner is a wrapper that uses Topshelf to run EventStore as a Windows Service
+description
+    Exira.EventStore.Runner is a wrapper that uses Topshelf to run EventStore as a Windows Service

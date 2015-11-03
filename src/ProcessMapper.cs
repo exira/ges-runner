@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 
-namespace GesRunner
+namespace Exira.EventStore.Runner
 {
     public class ProcessMapper
     {

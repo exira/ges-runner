@@ -1,16 +1,25 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{9131817A-7901-417E-83EF-62B898127EEC}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+		paket.lock = paket.lock
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ges-runner", "src\ges-runner.csproj", "{E5A74B3A-783F-4964-83CE-9D2CF4A5BF92}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{63A19D07-321B-416C-8BC8-BA42FF549D5A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{63A19D07-321B-416C-8BC8-BA42FF549D5A}"
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
-		LICENSE = LICENSE
+		build.fsx = build.fsx
+		docs\tools\generate.fsx = docs\tools\generate.fsx
+		docs\content\index.fsx = docs\content\index.fsx
+		LICENSE.txt = LICENSE.txt
 		README.md = README.md
+		RELEASE_NOTES.md = RELEASE_NOTES.md
 	EndProjectSection
 EndProject
 Global

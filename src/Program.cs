@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Sockets;
 using Topshelf;
 
-namespace GesRunner
+namespace Exira.EventStore.Runner
 {
     class Program
     {
