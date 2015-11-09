@@ -9,29 +9,30 @@ runnerConfig.Load "Runner.yaml"
 
 let mutable (proc: Process option) = None
 
-let stop (_: HostControl) =
+let stop _ =
     let killProcess (p: Process) =
         p.Refresh()
 
-        match p.HasExited with
-        | true -> true
-        | false ->
+        if p.HasExited then ()
+        else
             p.Kill()
             p.WaitForExit()
             p.Dispose()
-            true
 
     match proc with
     | None -> true
-    | Some p -> killProcess p
+    | Some p ->
+        killProcess p
+        proc <- None
+        true
 
-let start (_: HostControl) =
+let start hostControl =
     let args = sprintf "--config=\"%s\"" runnerConfig.Runner.EventStoreConfigPath
     printf "Starting %s %s" runnerConfig.Runner.Executable args
 
     let processInfo = ProcessStartInfo(runnerConfig.Runner.Executable, args, UseShellExecute = false)
     let runningProcess = Process.Start processInfo
-    runningProcess.Exited.AddHandler(fun sender args -> stop |> ignore)
+    runningProcess.Exited.AddHandler(fun sender args -> hostControl |> HostControl.stop)
 
     proc <- Some runningProcess
     true
