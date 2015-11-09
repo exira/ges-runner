@@ -1,7 +1,7 @@
-﻿open FSharp.Configuration
+﻿open System.Diagnostics
+open FSharp.Configuration
 open Topshelf
 open Time
-open System.Diagnostics
 
 type RunnerConfig = YamlConfig<"Runner.yaml">
 let runnerConfig = RunnerConfig()
@@ -9,7 +9,7 @@ runnerConfig.Load "Runner.yaml"
 
 let mutable (proc: Process option) = None
 
-let stop _ =
+let stop (_: HostControl) =
     let killProcess (p: Process) =
         p.Refresh()
 
@@ -25,10 +25,12 @@ let stop _ =
     | None -> true
     | Some p -> killProcess p
 
-let start _ =
+let start (_: HostControl) =
     let args = sprintf "--config=\"%s\"" runnerConfig.Runner.EventStoreConfigPath
+    printf "Starting %s %s" runnerConfig.Runner.Executable args
+
     let processInfo = ProcessStartInfo(runnerConfig.Runner.Executable, args, UseShellExecute = false)
-    let runningProcess = Process.Start processInfo;
+    let runningProcess = Process.Start processInfo
     runningProcess.Exited.AddHandler(fun sender args -> stop |> ignore)
 
     proc <- Some runningProcess
@@ -40,7 +42,7 @@ let main argv =
     |> run_as_local_system
     |> start_auto
     |> enable_shutdown
-    |> with_recovery (ServiceRecovery.Default |> restart (s runnerConfig.Runner.RestartIntervalInSeconds))
+    |> with_recovery (ServiceRecovery.Default |> restart (min runnerConfig.Runner.RestartIntervalInMinutes))
     |> with_start start
     |> with_stop stop
     |> description runnerConfig.Runner.Description

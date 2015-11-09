@@ -3,4 +3,4 @@
     Description: Run Event Store
     Executable: C:\ges-runner\EventStore-OSS-Win-v3.2.2\EventStore.ClusterNode.exe
     EventStoreConfigPath: C:\ges-runner\ges.esconfig
-    RestartIntervalInSeconds: 30
+    RestartIntervalInMinutes: 1

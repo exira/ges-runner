@@ -1,4 +1,4 @@
-# ges-runner
+﻿# ges-runner
 
 Wrapper that uses [Topshelf](http://topshelf-project.com/) to run EventStore (https://geteventstore.com/) as a Windows Service.
 
@@ -21,6 +21,30 @@ To install do the following:
     * ```ges-runner.exe uninstall```
 
   * Enjoy Event Store
+
+## Example Output
+
+```
+λ ges-runner.exe install
+Configuration Result:
+[Success] Name ges
+[Success] Description Run Event Store
+[Success] ServiceName ges
+Topshelf v3.2.150.0, .NET Framework v4.0.30319.42000
+
+Running a transacted installation.
+
+Beginning the Install phase of the installation.
+Installing ges service
+Installing service ges...
+Service ges has been successfully installed.
+
+The Install phase completed successfully, and the Commit phase is beginning.
+
+The Commit phase completed successfully.
+
+The transacted install has completed.
+```
 
 ## Cloning
 

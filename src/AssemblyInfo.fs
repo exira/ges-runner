@@ -6,7 +6,7 @@ open System.Reflection
 [<assembly: AssemblyDescriptionAttribute("Exira.EventStore.Runner is a wrapper that uses Topshelf to run EventStore as a Windows Service")>]
 [<assembly: AssemblyVersionAttribute("0.1.0")>]
 [<assembly: AssemblyFileVersionAttribute("0.1.0")>]
-[<assembly: AssemblyMetadataAttribute("githash","e92e1abd29a7dc9f9a289889a8620655af1dde80")>]
+[<assembly: AssemblyMetadataAttribute("githash","2f8d02e320a52cab40b001169b0d44d6b4bf4f76")>]
 do ()
 
 module internal AssemblyVersionInformation =
