@@ -7,12 +7,18 @@ Wrapper that uses [Topshelf](http://topshelf-project.com/) to run EventStore (ht
 To install do the following:
 
   * Download Event Store from http://geteventstore.com
-  
+
   * Download a release from the [Releases page](https://github.com/exira/ges-runner/releases) and unzip somewhere, for example ```C:\ges-runner\```
-  
-  * Update ```ges-runner.exe.config``` file with location to ```EventStore.ClusterNode.exe``` to run and the ```.esconfig``` you wish to use, according to [YAML documentation](http://docs.geteventstore.com/server/3.2.0/command-line-arguments/)
-  
-  * Run the ```Install.ps1``` script with the same servicename you configured in ```ges-runner.exe.config```, for example: ```powershell ./Install.ps1 -servicename ges```
+
+  * Update ```Runner.yaml``` file with location to ```EventStore.ClusterNode.exe``` to run and the ```.esconfig``` you wish to use, according to [YAML documentation](http://docs.geteventstore.com/server/3.2.0/command-line-arguments/)
+
+  * Run the ```Install.ps1``` script with the same servicename you configured in ```Runner.yaml```, for example: ```powershell ./Install.ps1 -servicename ges```
+
+  * Instead you can also simply run one of the following:
+    * ```ges-runner.exe install```
+    * ```ges-runner.exe start```
+    * ```ges-runner.exe stop```
+    * ```ges-runner.exe uninstall```
 
   * Enjoy Event Store
 

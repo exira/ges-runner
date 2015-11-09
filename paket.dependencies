@@ -8,6 +8,7 @@ nuget NUnit.Runners
 nuget FAKE
 nuget SourceLink.Fake
 
-nuget Topshelf
+nuget FSharp.Configuration
+nuget Topshelf.FSharp
 
 github fsharp/FAKE modules/Octokit/Octokit.fsx
