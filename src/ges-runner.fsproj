@@ -34,7 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\ges_runner.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\ges-runner.xml</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
     <OtherFlags>--win32res:icon.res</OtherFlags>
   </PropertyGroup>
@@ -58,7 +58,9 @@
     <Content Include="exira.ico" />
     <None Include="icon.rc" />
     <None Include="icon.res" />
-    <None Include="ges.esconfig" />
+    <None Include="ges.esconfig">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="App.config" />
     <None Include="paket.template" />
     <None Include="paket.references" />
