@@ -46,6 +46,43 @@ The Commit phase completed successfully.
 The transacted install has completed.
 ```
 
+```
+λ ges-runner.exe start
+Configuration Result:
+[Success] Name ges
+[Success] Description Run Event Store
+[Success] ServiceName ges
+Topshelf v3.2.150.0, .NET Framework v4.0.30319.42000
+The ges service was started.
+```
+
+```
+λ ges-runner.exe stop                               
+Configuration Result:                               
+[Success] Name ges                                  
+[Success] Description Run Event Store               
+[Success] ServiceName ges                           
+Topshelf v3.2.150.0, .NET Framework v4.0.30319.42000
+The ges service was stopped.                        
+```
+
+```
+λ ges-runner.exe uninstall                           
+Configuration Result:                                
+[Success] Name ges                                   
+[Success] Description Run Event Store                
+[Success] ServiceName ges                            
+Topshelf v3.2.150.0, .NET Framework v4.0.30319.42000 
+
+The uninstall is beginning.                          
+Uninstalling ges service                             
+Removing EventLog source ges.                        
+Service ges is being removed from the system...      
+Service ges was successfully removed from the system.
+
+The uninstall has completed.
+```
+
 ## Cloning
 
 ```git clone git@github.com:exira/ges-runner.git -c core.autocrlf=input```
