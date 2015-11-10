@@ -1,11 +1,16 @@
 ﻿open System.Diagnostics
+open System.Reflection
+open System.IO
 open FSharp.Configuration
 open Topshelf
 open Time
 
+let executablePath = Assembly.GetEntryAssembly().Location |> Path.GetDirectoryName
+let configPath = Path.Combine(executablePath, "Runner.yaml")
+
 type RunnerConfig = YamlConfig<"Runner.yaml">
 let runnerConfig = RunnerConfig()
-runnerConfig.Load "Runner.yaml"
+runnerConfig.Load configPath
 
 let mutable (proc: Process option) = None
 
@@ -28,7 +33,7 @@ let stop _ =
 
 let start hostControl =
     let args = sprintf "--config=\"%s\"" runnerConfig.Runner.EventStoreConfigPath
-    printf "Starting %s %s" runnerConfig.Runner.Executable args
+    printfn "Starting %s %s" runnerConfig.Runner.Executable args
 
     let processInfo = ProcessStartInfo(runnerConfig.Runner.Executable, args, UseShellExecute = false)
     let runningProcess = Process.Start processInfo

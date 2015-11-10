@@ -1,6 +1,6 @@
 ﻿Runner:
     ServiceName: ges
     Description: Run Event Store
-    Executable: C:\ges-runner\EventStore-OSS-Win-v3.2.2\EventStore.ClusterNode.exe
+    Executable: C:\ges-runner\EventStore-OSS-Win-v3.3.0\EventStore.ClusterNode.exe
     EventStoreConfigPath: C:\ges-runner\ges.esconfig
     RestartIntervalInMinutes: 1
