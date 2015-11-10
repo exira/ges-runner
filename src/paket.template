@@ -16,7 +16,7 @@ requireLicenseAcceptance
 copyright
     Copyright 2015
 tags
-    aws es topshelf f#
+    eventstore ges topshelf f#
 summary
     Exira.EventStore.Runner is a wrapper that uses Topshelf to run EventStore as a Windows Service
 description
