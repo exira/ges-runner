@@ -349,8 +349,8 @@ Target "Release" (fun _ ->
 
     // release on github
     createClient (getBuildParamOrDefault "github-user" "") (getBuildParamOrDefault "github-pw" "")
-    |> createDraft gitOwner gitName (sprintf "%s.%s" release.NugetVersion buildNumber) (release.SemVer.PreRelease <> None) release.Notes
-    // TODO: |> uploadFile "PATH_TO_FILE"
+    |> createDraft gitOwner gitName (sprintf "%s.%s" release.NugetVersion buildNumber) (release.SemVer.PreRelease <> None) [""]
+    |> uploadFile (sprintf "bin/%s.%s.%s.nupkg" project release.NugetVersion buildNumber)
     |> releaseDraft
     |> Async.RunSynchronously
 
