@@ -89,7 +89,7 @@ The uninstall has completed.
 
 ## License
 
-ges-runner is licensed under [MIT](http://choosealicense.com/licenses/mit/ "Read more about the MIT License"). Refer to [LICENSE](https://github.com/exira/ges-runner/blob/master/LICENSE) for more information
+ges-runner is licensed under [MIT](http://choosealicense.com/licenses/mit/ "Read more about the MIT License"). Refer to [LICENSE.txt](https://github.com/exira/ges-runner/blob/master/LICENSE.txt) for more information
 
 Code copied from this gist: https://gist.github.com/trbngr/5083266
 
