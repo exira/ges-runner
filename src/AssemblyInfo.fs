@@ -4,10 +4,10 @@ open System.Reflection
 [<assembly: AssemblyTitleAttribute("ges-runner")>]
 [<assembly: AssemblyProductAttribute("Exira.EventStore.Runner")>]
 [<assembly: AssemblyDescriptionAttribute("Exira.EventStore.Runner is a wrapper that uses Topshelf to run EventStore as a Windows Service")>]
-[<assembly: AssemblyVersionAttribute("0.1.9")>]
-[<assembly: AssemblyFileVersionAttribute("0.1.9")>]
-[<assembly: AssemblyMetadataAttribute("githash","24dbc840f35901be520a180c6a2f6c2614d7943c")>]
+[<assembly: AssemblyVersionAttribute("1.0.13")>]
+[<assembly: AssemblyFileVersionAttribute("1.0.13")>]
+[<assembly: AssemblyMetadataAttribute("githash","d885b613b3e1cf1c742d1d4abf164d0079992f37")>]
 do ()
 
 module internal AssemblyVersionInformation =
-    let [<Literal>] Version = "0.1.9"
+    let [<Literal>] Version = "1.0.13"

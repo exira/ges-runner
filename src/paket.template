@@ -21,3 +21,10 @@ summary
     Exira.EventStore.Runner is a wrapper that uses Topshelf to run EventStore as a Windows Service
 description
     Exira.EventStore.Runner is a wrapper that uses Topshelf to run EventStore as a Windows Service
+files
+    bin/Release/*.exe ==> tools
+    bin/Release/*.dll ==> tools
+    bin/Release/*.config ==> tools
+    bin/Release/*.esconfig ==> tools
+    bin/Release/*.ps1 ==> tools
+    bin/Release/Runner.yaml ==> tools
