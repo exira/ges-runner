@@ -35,14 +35,14 @@
           
 <h1><a name="ges-runner" class="anchor" href="#ges-runner">ges-runner <a href="https://www.nuget.org/packages/Exira.EventStore.Runner/"><img src="http://img.shields.io/nuget/v/Exira.EventStore.Runner.svg?style=flat" alt="NuGet Status" /></a></a></h1>
 
-<p>Wrapper that uses <a href="http://topshelf-project.com/">Topshelf</a> to run EventStore (<a href="https://geteventstore.com/)">https://geteventstore.com/)</a> as a Windows Service.</p>
+<p>Wrapper that uses <a href="http://topshelf-project.com/">Topshelf</a> to run EventStore (<a href="https://geteventstore.com/"><a href="https://geteventstore.com/">https://geteventstore.com/</a></a>) as a Windows Service.</p>
 
 <h3><a name="Usage" class="anchor" href="#Usage">Usage</a></h3>
 
 <p>To install do the following:</p>
 
 <ul>
-<li><p>Download <code>Event Store</code> from <a href="http://geteventstore.com">http://geteventstore.com</a></p></li>
+<li><p>Download <code>Event Store</code> from <a href="https://geteventstore.com/"><a href="https://geteventstore.com/">https://geteventstore.com/</a></a></p></li>
 <li><p>Download a release from the <a href="https://github.com/exira/ges-runner/releases">Releases page</a> and unzip somewhere, for example <code>C:\ges-runner\</code></p></li>
 <li><p>Update <code>Runner.yaml</code> file with location to <code>EventStore.ClusterNode.exe</code> to run and the <code>.esconfig</code> you wish to use, according to <a href="http://docs.geteventstore.com/server/3.3.0/command-line-arguments/">YAML documentation</a></p></li>
 <li><p>Run the <code>Install.ps1</code> script with the same servicename you configured in <code>Runner.yaml</code>, for example: <code>powershell ./Install.ps1 -servicename ges</code></p></li>
@@ -64,20 +64,15 @@ Configuration Result:
 [Success] Description Run Event Store
 [Success] ServiceName ges
 Topshelf v3.2.150.0, .NET Framework v4.0.30319.42000
-
-<p>Running a transacted installation.</p>
-
-<p>Beginning the Install phase of the installation.
+Running a transacted installation.
+Beginning the Install phase of the installation.
 Installing ges service
 Installing service ges...
-Service ges has been successfully installed.</p>
-
-<p>The Install phase completed successfully, and the Commit phase is beginning.</p>
-
-<p>The Commit phase completed successfully.</p>
-
-<p>The transacted install has completed.
-</code></pre></p>
+Service ges has been successfully installed.
+The Install phase completed successfully, and the Commit phase is beginning.
+The Commit phase completed successfully.
+The transacted install has completed.
+</code></pre>
 
 <pre><code>λ ges-runner.exe start
 Configuration Result:
@@ -108,9 +103,8 @@ Topshelf v3.2.150.0, .NET Framework v4.0.30319.42000
 Uninstalling ges service
 Removing EventLog source ges.
 Service ges is being removed from the system...
-Service ges was successfully removed from the system.</p>
-
-<p>The uninstall has completed.
+Service ges was successfully removed from the system.
+The uninstall has completed.
 </code></pre></p>
 
 <h3><a name="Cloning" class="anchor" href="#Cloning">Cloning</a></h3>
