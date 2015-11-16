@@ -204,6 +204,15 @@ Target "NuGet" (fun _ ->
             ReleaseNotes = toLines release.Notes})
 
     log "##teamcity[progressFinish 'NuGet']"
+
+    log "##teamcity[progressStart 'Zip']"
+
+    Unzip "bin/archive" (sprintf "bin/%s.%s.%s.nupkg" project release.NugetVersion buildNumber)
+
+    !! "bin/archive/tools/*.*"
+    |> Zip "bin/archive/tools" (sprintf "bin/%s.%s.%s.zip" project release.NugetVersion buildNumber)
+
+    log "##teamcity[progressFinish 'Zip']"
 )
 
 Target "PublishNuget" (fun _ ->
@@ -350,7 +359,7 @@ Target "Release" (fun _ ->
     // release on github
     createClient (getBuildParamOrDefault "github-user" "") (getBuildParamOrDefault "github-pw" "")
     |> createDraft gitOwner gitName (sprintf "%s.%s" release.NugetVersion buildNumber) (release.SemVer.PreRelease <> None) [""]
-    |> uploadFile (sprintf "bin/%s.%s.%s.nupkg" project release.NugetVersion buildNumber)
+    |> uploadFile (sprintf "bin/%s.%s.%s.zip" project release.NugetVersion buildNumber)
     |> releaseDraft
     |> Async.RunSynchronously
 
