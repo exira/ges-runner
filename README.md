@@ -6,7 +6,7 @@ Wrapper that uses [Topshelf](http://topshelf-project.com/) to run EventStore (ht
 
 To install do the following:
 
-  * Download `Event Store` from http://geteventstore.com
+  * Download `Event Store` from https://geteventstore.com
 
   * Download a release from the [Releases page](https://github.com/exira/ges-runner/releases) and unzip somewhere, for example `C:\ges-runner\`
 

@@ -7,13 +7,13 @@
 ges-runner [![NuGet Status](http://img.shields.io/nuget/v/Exira.EventStore.Runner.svg?style=flat)](https://www.nuget.org/packages/Exira.EventStore.Runner/)
 ======================
 
-Wrapper that uses [Topshelf](http://topshelf-project.com/) to run EventStore (https://geteventstore.com/) as a Windows Service.
+Wrapper that uses [Topshelf](http://topshelf-project.com/) to run EventStore ([https://geteventstore.com/](https://geteventstore.com/)) as a Windows Service.
 
 ### Usage
 
 To install do the following:
 
-  * Download `Event Store` from http://geteventstore.com
+  * Download `Event Store` from [https://geteventstore.com/](https://geteventstore.com/)
 
   * Download a release from the [Releases page](https://github.com/exira/ges-runner/releases) and unzip somewhere, for example `C:\ges-runner\`
 
@@ -37,18 +37,13 @@ Configuration Result:
 [Success] Description Run Event Store
 [Success] ServiceName ges
 Topshelf v3.2.150.0, .NET Framework v4.0.30319.42000
-
 Running a transacted installation.
-
 Beginning the Install phase of the installation.
 Installing ges service
 Installing service ges...
 Service ges has been successfully installed.
-
 The Install phase completed successfully, and the Commit phase is beginning.
-
 The Commit phase completed successfully.
-
 The transacted install has completed.
 </code></pre>
 
@@ -82,7 +77,6 @@ Uninstalling ges service
 Removing EventLog source ges.
 Service ges is being removed from the system...
 Service ges was successfully removed from the system.
-
 The uninstall has completed.
 </code></pre>
 
