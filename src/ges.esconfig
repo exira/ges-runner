@@ -7,4 +7,6 @@ IntTcpPort: 8002
 ExtTcpPort: 8003
 ExtHttpPrefixes: http://example.org:8001/
 StatsPeriodSec: 600
+StartStandardProjections: True
+RunProjections: System
 ---
