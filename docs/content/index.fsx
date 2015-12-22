@@ -7,7 +7,7 @@
 ges-runner [![NuGet Status](http://img.shields.io/nuget/v/Exira.EventStore.Runner.svg?style=flat)](https://www.nuget.org/packages/Exira.EventStore.Runner/)
 ======================
 
-Wrapper that uses [Topshelf](http://topshelf-project.com/) to run EventStore ([https://geteventstore.com/](https://geteventstore.com/)) as a Windows Service.
+Wrapper that uses [Topshelf](http://topshelf-project.com/) to run [EventStore]([https://geteventstore.com/](https://geteventstore.com/)) as a Windows Service.
 
 ### Usage
 
