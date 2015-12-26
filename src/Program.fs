@@ -37,7 +37,8 @@ let start hostControl =
 
     let processInfo = ProcessStartInfo(runnerConfig.Runner.Executable, args, UseShellExecute = false)
     let runningProcess = Process.Start processInfo
-    runningProcess.Exited.AddHandler(fun sender args -> hostControl |> HostControl.stop)
+    runningProcess.EnableRaisingEvents <- true
+    runningProcess.Exited.AddHandler(fun _ _ -> hostControl |> HostControl.restart)
 
     proc <- Some runningProcess
     true
