@@ -167,7 +167,7 @@ Target "RunTests" (fun _ ->
 // the ability to step through the source code of external libraries https://github.com/ctaggart/SourceLink
 
 Target "SourceLink" (fun _ ->
-    let baseUrl = sprintf "%s/%s/{0}/%%var2%%" gitRaw (project.ToLower())
+    let baseUrl = sprintf "%s/%s/{0}/%%var2%%" gitRaw (gitName.ToLower())
     use repo = new GitRepo(__SOURCE_DIRECTORY__)
 
     let addAssemblyInfo (projFileName:String) =
