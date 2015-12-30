@@ -56,4 +56,5 @@ let main argv =
     |> description runnerConfig.Runner.Description
     |> display_name runnerConfig.Runner.ServiceName
     |> service_name runnerConfig.Runner.ServiceName
+    |> depends_on_eventlog
     |> run
