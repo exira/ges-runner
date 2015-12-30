@@ -20,6 +20,7 @@ let stop _ =
 
         if p.HasExited then ()
         else
+            p.EnableRaisingEvents <- false
             p.Kill()
             p.WaitForExit()
             p.Dispose()

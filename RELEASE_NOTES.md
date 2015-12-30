@@ -1,3 +1,6 @@
+#### 1.3 - December 30 2015
+* Make sure the service can be stopped
+
 #### 1.2 - December 29 2015
 * Target .NET 4.6.1
 
